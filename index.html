@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Payment-Form</title>
+</head>
+<body>
+    <form action="" class="container">
+        <h1 class="main-heading">Payment Form</h1>
+        <p>Required fields are followed by * </p>
+        <h2>Contact Information</h2>
+        <div>
+            <label for="name">Name: *</label> 
+            <input type="text" name="name" placeholder="Enter your Full Name" required>
+        </div>
+        <br>
+        <div>
+            <fieldset>
+                <legend> Gender *</legend>
+                <span> Male: <input type="radio" name="gender" id="male" required> </span>
+                <span> Female: <input type="radio" name="gender" id="female"required> </span>
+            </fieldset>
+        </div>
+        <br>
+        <div>
+            <label for="address">Address:</label>
+            <textarea name="address" id="address" cols="100" rows="7" placeholder="Write your current Address"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email: *</label>
+            <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+        </div>
+        <br>
+        <div>
+            <label for="pin-code">Pincode: *</label>
+            <input type="number" name="pin-code" id="pin-code" placeholder="Pincode" required>
+        </div>
+
+        <h2>Payment Information</h2>
+        <div>
+            <label for="card-type">Card Type: *</label>
+            <select name="card-type" id="card-type" required>
+                <option value="">--Select a Card Type--</option>
+                <option value="easypaisa">Easypaisa</option>
+                <option value="jasscash">Jasscash</option>
+                <option value="payoneer">Payoneer</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="card-number">Card Number: *</label>
+            <input type="number" name="card-number" id="card-number" required>
+        </div>
+        <br>
+        <div>
+            <label for="card-expiration-date">Card Expiration Date: *</label>
+            <input type="date" name="date" id="date" required>
+        </div>
+        <div>
+            <label for="cvv">CVV: *</label>
+            <input type="password" name="cvv" id="cvv" required>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Pay Now">
+        </div>
+    </form>
+</body>
+</html>
